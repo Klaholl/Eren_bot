@@ -55,6 +55,14 @@ function upload_random_image(images){
             }
             else{
                 console.log('Posted an image!');
+                fs.unlink(image_path, function(err){
+                    if (err){
+                      console.log('ERROR: unable to delete image ' + image_path);
+                    }
+                    else{
+                      console.log('image ' + image_path + ' was deleted');
+                    }
+                  });
             }
             }
         );

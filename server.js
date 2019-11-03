@@ -61,4 +61,4 @@ function upload_random_image(images){
         );
         }
     });
-    } //nice
+    }
